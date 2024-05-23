@@ -1,0 +1,107 @@
+title {
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-size: 28px;
+  padding: 10px;
+}
+  
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 24px;
+}
+
+body {
+  background-color: pink;
+  background:radial-gradient(white,rgba(0,0,0,0.2)50%);
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  border-radius: 30%;
+  max-width: 75%;
+  height: auto;
+}
+
+ul{
+  list-style: none ;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  color: white;
+  font-family: sans-serif;
+}
+
+.one {
+  background-color: black;
+  font-family: sans-serif;
+  margin: 60px;
+}
+p {
+  color: black;
+  font-family: sans-serif;
+  line-break: normal;
+}
+
+.two {
+  background-color: black;
+  font-family: sans-serif;
+  margin: 60px;
+}
+p {
+  color: black;
+  font-family: sans-serif;
+  line-break: normal;
+}
+
+.three {
+  background-color: black;
+  font-family: sans-serif;
+  margin: 60px;
+}
+p {
+  color: black;
+  font-family: sans-serif;
+  line-break: normal;
+}
+
+.icon {
+  width: 50px;
+  height: 50%;
+  background-color: pink;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.icon :hover{
+  transform: scale(1.2)
+}
+
+@keyframes rotate {
+  0%{transform: rotate(0deg); }
+  100% {transform: rotate(360deg);}
+}
+
+.icon::after {
+content: "";
+display: block;
+width: 20px;
+height: 20px;
+background-color: pink;
+border-radius: 50%;
+position: absolute;
+top: 15px;
+left: 15px;
+animation: rotate 2s infinite linear;
+}
+
+
